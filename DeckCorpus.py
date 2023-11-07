@@ -41,6 +41,8 @@ def _card_ints_to_list(series, shuffle=False):
     idx = filtered_series.index
     for i in range(len(filtered_series)):
         word = [idx[i]]
+        #remove space in word
+        word = word[0].replace(" ", "~")
         words = word * filtered_series[i]
         deck_list += words
     assert(len(deck_list) == sum(series))
