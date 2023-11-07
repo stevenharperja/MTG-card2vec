@@ -190,4 +190,6 @@ def card2vec_preprocess(path):
     df = df.select(pl.col('^deck_.*$')).to_pandas()
     
     df.columns = df.columns.str.removeprefix('deck_').copy() #get rid of "deck_" in col names
+    #replace spaces in col names with tilde
+    df.columns = df.columns.str.replace(' ', '~').copy()
     return df
