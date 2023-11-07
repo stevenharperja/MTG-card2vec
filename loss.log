@@ -1,0 +1,2 @@
+INFO:gensim.models.word2vec:collecting all words and their counts
+INFO:gensim.models.word2vec:PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
