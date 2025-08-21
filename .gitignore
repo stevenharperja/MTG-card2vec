@@ -1,3 +1,4 @@
 data/
 .ipynb_checkpoints/
 *.pyc
+transformer_training_data/
